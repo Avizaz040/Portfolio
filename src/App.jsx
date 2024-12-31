@@ -12,7 +12,7 @@ import ContactsPage from "./Pages/ContactsPage";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/portfolio",
       element: <Home />,
     },
     {
