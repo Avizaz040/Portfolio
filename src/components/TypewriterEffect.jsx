@@ -127,7 +127,7 @@ export const TypewriterEffectSmooth = ({
           delay: 1,
         }}>
         <div
-          className="text-xs sm:text-base md:text-6xl lg:text:6xl xl:text-8xl font-bold"
+          className="text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-bold"
           style={{
             whiteSpace: "nowrap",
           }}>
