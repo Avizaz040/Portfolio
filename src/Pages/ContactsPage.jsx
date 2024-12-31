@@ -39,7 +39,7 @@ function ContactsPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 0.8 }}
           >
-            <a href="https://www.linkedin.com/in/avishek-mondal-0b9b7b1b3/" target="_blank">
+            <a href="https://www.linkedin.com/in/avishek-mondal-75aa95113" target="_blank">
               <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" alt="linkedin"  />
             </a>
             <a href="https://github.com/avizaz040" target="_blank">
