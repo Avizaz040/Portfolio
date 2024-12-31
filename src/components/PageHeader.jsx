@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 function PageHeader({image, title}) {
   return (
     
-      <div className=" fixed top-0 bg-black w-full py-8 mb-10">
+      <div className=" fixed top-0 bg-black w-full py-8 mb-10 z-40">
         <motion.div
           className="flex justify-evenly items-center gap-8"
           initial={{ opacity: 0 }}

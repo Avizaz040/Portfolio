@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
-import { IoArrowBack } from "react-icons/io5";
+import BackButton from "../components/BackButton";
 import whyMeImg from "../Assets/Images/whyMeImage.png";
 import DemoImg from "../Assets/Images/DemoImg.jpg";
 import { motion } from "framer-motion";
@@ -10,15 +10,10 @@ function WhyMePage() {
   const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[#1f242d] flex flex-col items-center justify-start">
-      <div
-        className="absolute top-8 left-8 cursor-pointer bg-white rounded-full z-10"
-        onClick={() => navigate("/navigation")}
-      >
-        <IoArrowBack style={{ fontSize: "2rem" }} />
-      </div>
+      <BackButton />
       <PageHeader image={whyMeImg} title={"Why me?"} />
 
-      <div class="min-h-screen bg-gradient-to-b from-slate-800 to-slate-900 text-white pt-[18rem] py-10 px-6 mb-8 flex flex-col items-center ">
+      <div class="min-h-screen bg-gradient-to-b from-slate-800 to-slate-900 text-white mt-[18rem] py-10 px-6 mb-8 flex flex-col items-center ">
         <h1 class="text-4xl font-bold text-center pb-4 mb-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
           Why Recruit Me?
         </h1>

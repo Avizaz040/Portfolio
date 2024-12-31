@@ -11,7 +11,7 @@ function ContactsPage() {
     <div className="min-h-screen bg-[#1f242d] flex flex-col items-start justify-start ">
       <BackButton />
       <PageHeader image={contactsImg} title={"Contacts"} />
-      <div className=" mx-auto flex flex-col items-start text-white text-4xl">
+      <div className=" mx-auto flex flex-col items-start text-white text-4xl mt-[18rem] ">
         <motion.div className="flex justify-center items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

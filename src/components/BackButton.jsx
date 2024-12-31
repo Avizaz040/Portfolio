@@ -6,7 +6,7 @@ function BackButton() {
   const navigate = useNavigate();
   return (
     <div
-      className="fixed top-8 left-8 cursor-pointer bg-white rounded-full z-10 group"
+      className="fixed top-8 left-8 cursor-pointer bg-white rounded-full z-50 group"
       onClick={() => navigate("/navigation")}
     >
       <IoArrowBack style={{ fontSize: "2rem" }} />
