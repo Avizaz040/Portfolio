@@ -11,13 +11,13 @@ function ContactsPage() {
     <div className="min-h-screen bg-[#1f242d] flex flex-col items-start justify-start ">
       <BackButton />
       <PageHeader image={contactsImg} title={"Contacts"} />
-      <div className=" mx-auto flex flex-col items-start text-white text-4xl mt-[18rem] ">
+      <div className=" mx-auto flex flex-col items-start text-white text-xl md:text-3xl lg:text-4xl mt-[18rem] ">
         <motion.div className="flex justify-center items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5, delay: 0.4 }}
         >
-          <img src={PhoneIcon} alt="phoneImg" className="w-[6rem] h-[6rem] " />
+          <img src={PhoneIcon} alt="phoneImg" className="w-[4rem] h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem] " />
           <p>+91 7980480198</p>
         </motion.div>
         <motion.div className="flex justify-center items-center"
@@ -25,7 +25,7 @@ function ContactsPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5, delay: 0.5 }}
         >
-          <img src={MailIcon} alt="phoneImg" className="w-[6rem] h-[6rem]" />
+          <img src={MailIcon} alt="phoneImg" className="w-[4rem] h-[4rem] md:w-[5rem] md:h-[5rem] lg:w-[6rem] lg:h-[6rem]" />
           <p>avizaz040@gmail.com</p>
         </motion.div>
         <div className="mx-auto mt-4 space-y-4 content-center">
