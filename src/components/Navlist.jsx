@@ -33,7 +33,7 @@ function Navlist() {
         <p className="text-sm md:text-2xl font-semibold text-white">About me</p>
       </motion.div>
       <motion.div
-        className="absolute w-[5rem] h-[5rem] sm:w-[7rem] sm:h-[7rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem] lg:h-[12rem] rounded-full bg-teal-700 text-center content-center transition-shadow duration-300 ease-in-out shadow-lg shadow-black hover:shadow-green-glow cursor-pointer top-[32%] sm:top-[30%]  md:top-[21%] lg:top-[12%] xl:top-[3%] p-2"
+        className="absolute w-[5rem] h-[5rem] sm:w-[7rem] sm:h-[7rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem] lg:h-[12rem] rounded-full bg-teal-700 text-center content-center transition-shadow duration-300 ease-in-out shadow-lg shadow-black hover:shadow-green-glow cursor-pointer top-[28%] sm:top-[30%]  md:top-[21%] lg:top-[12%] xl:top-[3%] p-2"
         initial={{ scale: 0}}
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -53,7 +53,7 @@ function Navlist() {
         <p className="text-sm  md:text-2xl font-semibold text-white">Education</p>
       </motion.div>
       <motion.div
-        className="absolute w-[5rem] h-[5rem] sm:w-[7rem] sm:h-[7rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem] lg:h-[12rem] rounded-full bg-red-500 text-center content-center transition-shadow duration-300 ease-in-out shadow-lg shadow-black hover:shadow-red-glow cursor-pointer bottom-[36%] left-[18%] sm:bottom-[32%] sm:left-[28%] md:bottom-[26%] md:left-[23%] lg:bottom-[18%] lg:left-[25%] xl:bottom-[11%] xl:left-[32%] p-2"
+        className="absolute w-[5rem] h-[5rem] sm:w-[7rem] sm:h-[7rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem] lg:h-[12rem] rounded-full bg-red-500 text-center content-center transition-shadow duration-300 ease-in-out shadow-lg shadow-black hover:shadow-red-glow cursor-pointer bottom-[32%] left-[20%] sm:bottom-[32%] sm:left-[28%] md:bottom-[26%] md:left-[23%] lg:bottom-[18%] lg:left-[25%] xl:bottom-[11%] xl:left-[32%] p-2"
         initial={{ scale: 0}}
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -63,7 +63,7 @@ function Navlist() {
         <p className="text-sm  md:text-2xl font-semibold text-white">Skills</p>
       </motion.div>
       <motion.div
-        className="absolute w-[5rem] h-[5rem] sm:w-[7rem] sm:h-[7rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem] lg:h-[12rem] rounded-full bg-pink-500 text-center content-center transition-shadow duration-300 ease-in-out shadow-lg shadow-black hover:shadow-pink-glow cursor-pointer bottom-[36%] right-[18%] sm:bottom-[32%] sm:right-[28%] md:bottom-[26%] md:right-[23%] lg:bottom-[18%] lg:right-[25%] xl:bottom-[11%] xl:right-[32%] p-1"
+        className="absolute w-[5rem] h-[5rem] sm:w-[7rem] sm:h-[7rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem] lg:h-[12rem] rounded-full bg-pink-500 text-center content-center transition-shadow duration-300 ease-in-out shadow-lg shadow-black hover:shadow-pink-glow cursor-pointer bottom-[32%] right-[20%] sm:bottom-[32%] sm:right-[28%] md:bottom-[26%] md:right-[23%] lg:bottom-[18%] lg:right-[25%] xl:bottom-[11%] xl:right-[32%] p-1"
         initial={{ scale: 0}}
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.8 }}
