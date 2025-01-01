@@ -121,8 +121,8 @@ export function ExpandableCardDemo() {
           layoutId={`card-${card.title}-${id}`}
           key={`card-${card.title}-${id}`}
           onClick={() => setActive(card)}
-          className="md:p-8 lg:p-4 md:mb-10 lg:mb-8 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
-          <div className="flex gap-4 flex-col md:flex-row ">
+          className="mb-8 md:p-8 lg:p-4 md:mb-10 lg:mb-8 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
+          <div className="flex gap-4 flex-col md:flex-row justify-center items-center">
             <motion.div layoutId={`image-${card.title}-${id}`}>
               <img
                 width={100}
@@ -134,7 +134,7 @@ export function ExpandableCardDemo() {
             <div className="">
               <motion.h3
                 layoutId={`title-${card.title}-${id}`}
-                className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left">
+                className="font-medium text-neutral-400 dark:text-neutral-200 text-center md:text-left">
                 {card.title}
               </motion.h3>
               <motion.p
@@ -146,7 +146,7 @@ export function ExpandableCardDemo() {
           </div>
           <motion.button
             layoutId={`button-${card.title}-${id}`}
-            className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0">
+            className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-2 md:mt-0">
             {card.ctaText}
           </motion.button>
         </motion.div>
