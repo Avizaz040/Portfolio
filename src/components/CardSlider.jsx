@@ -54,14 +54,25 @@ const CardSlider = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     beforeChange: (current, next) => setSkillIndex(next),
+    responsive: [
+      {
+        breakpoint: 768, // Apply vertical settings for screens smaller than 768px
+        settings: {
+          vertical: true,
+          verticalSwiping: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto pb-4 mb-8">
+    <div className="w-full max-w-4xl mx-auto pb-4 mb-8 px-4">
       <Slider {...settings}>
         {skills.map((skill, index) => (
-          <div key={index} className={`p-8 h-[28rem] content-center transform transition-transform duration-300 ${index === skillIndex ? 'scale-125 rounded-2xl ' : 'scale-100'} `}>
-            <div className=" bg-white rounded-lg shadow-lg shadow-black p-6 min-h-[20rem] flex flex-col justify-evenly ">
+          <div key={index} className={`p-8 h-[28rem] sm:h-[24rem] md:h-[25rem] content-center transform transition-transform duration-300 ${index === skillIndex ? 'scale-125 rounded-2xl ' : 'scale-100'} `}>
+            <div className="card bg-white rounded-lg shadow-lg shadow-black p-6 min-h-[20rem] sm:min-h-[16rem] md:min-h-[20rem]  flex flex-col justify-evenly ">
               <h3 className="text-2xl font-bold mb-2">{skill.title}</h3>
               <p className="text-gray-700">{skill.description}</p>
             </div>
