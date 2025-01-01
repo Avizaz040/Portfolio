@@ -1,5 +1,5 @@
 import React from "react";
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
 import Navigation from "./Pages/Navigation";
 import AboutPage from "./Pages/AboutPage";
@@ -8,6 +8,7 @@ import SkillPage from "./Pages/SkillPage";
 import ExperiencePage from "./Pages/ExperiencePage";
 import WhyMePage from "./Pages/WhyMePage";
 import ContactsPage from "./Pages/ContactsPage";
+import Footer from "./components/Footer";
 
 function App() {
   const router = createBrowserRouter([
@@ -21,33 +22,58 @@ function App() {
     },
     {
       path: "/about",
-      element: <AboutPage />,
+      element: (
+        <>
+          <AboutPage />
+          <Footer />
+        </>
+      ),
     },
     {
       path: "/education",
-      element: <EducationPage />
+      element: (
+        <>
+          <EducationPage />
+          <Footer />
+        </>
+      ),
     },
     {
       path: "/skill",
-      element: <SkillPage />
+      element: (
+        <>
+          <SkillPage />
+          <Footer />
+        </>
+      ),
     },
     {
       path: "/experience",
-      element: <ExperiencePage />
+      element: (
+        <>
+          <ExperiencePage />
+          <Footer />
+        </>
+      ),
     },
     {
       path: "/whyme",
-      element: <WhyMePage />
+      element: <>
+        <WhyMePage />
+        <Footer />
+        </>
     },
     {
       path: "/contact",
-      element: <ContactsPage />
-    }
-
-  ])
+      element: <>
+        <ContactsPage />
+        <Footer />
+        </>
+    },
+  ]);
   return (
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   );
 }
