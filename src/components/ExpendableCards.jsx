@@ -121,7 +121,10 @@ export function ExpandableCardDemo() {
           layoutId={`card-${card.title}-${id}`}
           key={`card-${card.title}-${id}`}
           onClick={() => setActive(card)}
-          className="mb-8 md:p-8 lg:p-4 md:mb-10 lg:mb-8 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
+          className="mb-8 md:p-8 lg:p-4 md:mb-10 lg:mb-8 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: index * 0.2 }}>
           <div className="flex gap-4 flex-col md:flex-row justify-center items-center">
             <motion.div layoutId={`image-${card.title}-${id}`}>
               <img
