@@ -18,7 +18,7 @@ function Navlist() {
         animate={{ scale: 1 }}
         transition={{ duration: 0.5 }}
         
-        onClick={() => navigate("/whyme")}
+        onClick={() => navigate("/portfolio/whyme")}
       >
         <p className="text-sm md:text-2xl font-semibold">Why me?</p>
       </motion.div>
@@ -28,7 +28,7 @@ function Navlist() {
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.2 }}
         
-        onClick={() => navigate("/about")}
+        onClick={() => navigate("/portfolio/about")}
       >
         <p className="text-sm md:text-2xl font-semibold text-white">About me</p>
       </motion.div>
@@ -38,7 +38,7 @@ function Navlist() {
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.2 }}
         
-        onClick={() => navigate("/contact")}
+        onClick={() => navigate("/portfolio/contact")}
       >
         <p className="text-sm  md:text-2xl font-semibold text-white">Contact me</p>
       </motion.div>
@@ -48,7 +48,7 @@ function Navlist() {
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.4 }}
         
-        onClick={() => navigate("/education")}
+        onClick={() => navigate("/portfolio/education")}
       >
         <p className="text-sm  md:text-2xl font-semibold text-white">Education</p>
       </motion.div>
@@ -58,7 +58,7 @@ function Navlist() {
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.6 }}
 
-        onClick={() => navigate("/skill")}
+        onClick={() => navigate("/portfolio/skill")}
       >
         <p className="text-sm  md:text-2xl font-semibold text-white">Skills</p>
       </motion.div>
@@ -68,7 +68,7 @@ function Navlist() {
         animate={{ scale: 1}}
         transition={{ duration: 0.5, delay: 0.8 }}
         
-        onClick={() => navigate("/experience")}
+        onClick={() => navigate("/portfolio/experience")}
       >
         <p className="text-sm md:text-2xl font-semibold text-white">Experience</p>
       </motion.div>

@@ -3,6 +3,7 @@ import PageHeader from "../components/PageHeader";
 import experienceImg from "../Assets/Images/experienceImg.png";
 import BackButton from "../components/BackButton";
 import { animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 function ExperiencePage() {
   const scrollRef = useRef(null);
@@ -68,11 +69,14 @@ function ExperiencePage() {
       <div className="h-[16rem]">
 
       </div>
-      <div
+      <motion.div
         id="scroll-container"
         ref={scrollRef}
         onWheel={handleScroll}
         className="mx-auto  w-full max-w-4xl lg:h-[500px] md:h-[50rem]  px-4 sm:px-8 lg:px-16 xl:px-24 lg:pb-8 overflow-hidden transition-all duration-500 ease-in-out"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
         style={{ 
           overflowY: "scroll",
           scrollbarWidth: "none", /* Firefox */
@@ -99,7 +103,7 @@ function ExperiencePage() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

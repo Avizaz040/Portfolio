@@ -32,7 +32,7 @@ function AuroraBackgroundDisplay() {
         {/* <button className="bg-slate-800 dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2 shadow-inner shadow-white/30">
           Let's Begin
         </button> */}
-        <Button name={"Let's Begin"} link={ () => navigate("/navigation")}/>
+        <Button name={"Let's Begin"} link={ () => navigate("/portfolio/navigation")}/>
       </motion.div>
     </AuroraBackground>
   )

@@ -17,11 +17,11 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/navigation",
+      path: "/portfolio/navigation",
       element: <Navigation />,
     },
     {
-      path: "/about",
+      path: "/portfolio/about",
       element: (
         <>
           <AboutPage />
@@ -30,7 +30,7 @@ function App() {
       ),
     },
     {
-      path: "/education",
+      path: "/portfolio/education",
       element: (
         <>
           <EducationPage />
@@ -39,7 +39,7 @@ function App() {
       ),
     },
     {
-      path: "/skill",
+      path: "/portfolio/skill",
       element: (
         <>
           <SkillPage />
@@ -48,7 +48,7 @@ function App() {
       ),
     },
     {
-      path: "/experience",
+      path: "/portfolio/experience",
       element: (
         <>
           <ExperiencePage />
@@ -57,14 +57,14 @@ function App() {
       ),
     },
     {
-      path: "/whyme",
+      path: "/portfolio/whyme",
       element: <>
         <WhyMePage />
         <Footer />
         </>
     },
     {
-      path: "/contact",
+      path: "/portfolio/contact",
       element: <>
         <ContactsPage />
         <Footer />
